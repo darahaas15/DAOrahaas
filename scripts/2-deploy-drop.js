@@ -3,14 +3,13 @@ import sdk from './1-initialize-sdk.js'
 import { readFileSync } from 'fs'
 ;(async () => {
     try {
-        const editionDropAddress = await sdk.deployer.deploytEditionDrop({
+        const editionDropAddress = await sdk.deployer.deployEditionDrop({
             // The collection's name, ex. CryptoPunks
             name: 'DAOrahaas Membership',
             // A description for the collection.
-            description:
-                'Veniam duis est sit cillum do mollit sunt cupidatat. Ullamco magna aute elit occaecat est ut consectetur commodo id reprehenderit. Aliqua Lorem exercitation dolor id irure incididunt duis sint dolor commodo esse Lorem commodo id anim. Consequat cillum non laborum id. Est id qui nisi voluptate aliqua non dolor sint. Incididunt reprehenderit in ullamco esse excepteur. Do culpa sint Lorem incididunt cupidatat aute ea sunt ex aliqua. Officia labore dolor occaecat in aute eu quis aliquip minim nostrud Lorem do. Aliquip sint adipisicing deserunt exercitation qui consequat et anim. Ullamco deserunt sunt nulla non et aute.',
+            description: 'A DAO for fans of me.',
             // The image that will be held on our NFT! The fun part :).
-            image: readFileSync('scripts/assets/naruto.png'),
+            image: readFileSync('scripts/assets/drhs.png'),
             // We need to pass in the address of the person who will be receiving the proceeds from sales of nfts in the contract.
             // We're planning on not charging people for the drop, so we'll pass in the 0x0 address
             // you can set this to your own wallet address if you want to charge for the drop.
